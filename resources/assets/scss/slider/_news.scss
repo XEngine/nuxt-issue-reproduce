@@ -1,0 +1,24 @@
+.news-container {
+  padding: 38px 0;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+          "header  header  header"
+          "sidebar content content"
+          "footer  footer  footer";
+  color: #444;
+  .news-item{
+    &:first-child {
+      grid-area: header
+    }
+    &:nth-child(2){
+      grid-area: sidebar
+    }
+    &:nth-child(3){
+      grid-area: content
+    }
+    &:last-child {
+      grid-area: footer
+    }
+  }
+}

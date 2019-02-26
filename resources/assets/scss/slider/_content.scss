@@ -1,0 +1,15 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: blur(80px);
+    -webkit-backface-visibility: hidden;
+    transform: scale(1.05)
+  }
+}
